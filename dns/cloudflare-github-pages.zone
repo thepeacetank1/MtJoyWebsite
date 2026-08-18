@@ -1,0 +1,26 @@
+$ORIGIN mtjoymedicine.org.
+$TTL 3600
+
+; GitHub Pages apex records
+@ 3600 IN A 185.199.108.153 ; GitHub Pages cf_tags=cf-proxied:false
+@ 3600 IN A 185.199.109.153 ; GitHub Pages cf_tags=cf-proxied:false
+@ 3600 IN A 185.199.110.153 ; GitHub Pages cf_tags=cf-proxied:false
+@ 3600 IN A 185.199.111.153 ; GitHub Pages cf_tags=cf-proxied:false
+
+; GitHub Pages IPv6 records
+@ 3600 IN AAAA 2606:50c0:8000::153 ; GitHub Pages cf_tags=cf-proxied:false
+@ 3600 IN AAAA 2606:50c0:8001::153 ; GitHub Pages cf_tags=cf-proxied:false
+@ 3600 IN AAAA 2606:50c0:8002::153 ; GitHub Pages cf_tags=cf-proxied:false
+@ 3600 IN AAAA 2606:50c0:8003::153 ; GitHub Pages cf_tags=cf-proxied:false
+
+; GitHub recommends configuring www alongside the apex domain.
+www 3600 IN CNAME thepeacetank1.github.io. ; GitHub Pages cf_tags=cf-proxied:false
+
+; DOMAIN VERIFICATION — uncomment after replacing the placeholder with the
+; unique value shown at GitHub Profile Settings > Pages > Add a domain.
+; Keep this TXT record permanently after verification.
+; _github-pages-challenge-thepeacetank1 3600 IN TXT "PASTE_GITHUB_VERIFICATION_VALUE_HERE"
+
+; This file intentionally contains web-hosting records only.
+; Do not remove existing Microsoft 365 MX, SPF, DKIM, DMARC, autodiscover,
+; or other mail-related DNS records when importing it into Cloudflare.
