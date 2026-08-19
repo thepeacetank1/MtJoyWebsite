@@ -4,7 +4,8 @@ A lightweight, multi-page static website for Dr. Jeannine Randolph and Mount Joy
 
 ## Pages
 
-- Home (`index.html`)
+- Practice update landing page (`index.html`)
+- Home (`home.html`)
 - About (`about.html`)
 - Mission (`mission.html`)
 - Contact (`contact.html`)
