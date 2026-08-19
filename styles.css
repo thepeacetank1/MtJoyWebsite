@@ -29,7 +29,9 @@ img { display: block; max-width: 100%; }
 
 .site-header { background: var(--paper-light); border-bottom: 1px solid var(--line); }
 .header-inner { min-height: 98px; display: flex; align-items: center; justify-content: space-between; gap: 36px; }
-.brand { text-decoration: none; display: inline-flex; flex-direction: column; line-height: 1.1; }
+.brand { text-decoration: none; display: inline-flex; align-items: center; gap: 13px; line-height: 1.1; }
+.brand-mark { width: 56px; height: 56px; flex: 0 0 auto; object-fit: contain; }
+.brand-copy { display: inline-flex; flex-direction: column; }
 .brand-name { font-family: Georgia, "Times New Roman", serif; font-size: 1.55rem; letter-spacing: -0.025em; }
 .brand-note { margin-top: 7px; color: var(--muted); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; }
 .site-nav { display: flex; align-items: center; gap: 28px; }
@@ -109,6 +111,8 @@ input:focus, textarea:focus { outline: 2px solid transparent; border-color: var(
 .site-footer { padding: 60px 0 30px; color: #e7ece8; background: #16231f; }
 .footer-grid { display: grid; grid-template-columns: 1.2fr .8fr .8fr; gap: 50px; padding-bottom: 54px; }
 .footer-brand { font-family: Georgia, serif; font-size: 1.8rem; }
+.footer-brand-lockup { display: flex; align-items: center; gap: 16px; }
+.footer-mark { width: 58px; height: 58px; padding: 4px; background: var(--paper); }
 .footer-heading { margin-bottom: 14px; color: #9eaaa4; font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; }
 .footer-links { display: flex; flex-direction: column; align-items: flex-start; gap: 7px; }
 .footer-links a { color: inherit; text-decoration: none; }
@@ -134,6 +138,7 @@ input:focus, textarea:focus { outline: 2px solid transparent; border-color: var(
   .container { width: min(calc(100% - 28px), var(--max)); }
   .site-nav { flex-wrap: wrap; overflow: visible; }
   .site-nav .nav-contact { margin-left: 0; }
+  .brand-mark { width: 48px; height: 48px; }
   .section { padding: 72px 0; }
   .page-hero { padding: 66px 0 60px; }
   .media-blank, .media-blank.portrait { min-height: 350px; }
