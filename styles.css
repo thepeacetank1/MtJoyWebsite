@@ -29,8 +29,8 @@ img { display: block; max-width: 100%; }
 
 .notice-page { min-height: 100vh; display: flex; flex-direction: column; background: var(--paper); }
 .notice-header { border-bottom: 1px solid var(--line); background: var(--paper-light); }
-.notice-header-inner { min-height: 90px; display: flex; align-items: center; gap: 14px; font-family: Georgia, "Times New Roman", serif; font-size: 1.35rem; }
-.notice-mark { width: 54px; height: 54px; object-fit: contain; }
+.notice-header-inner { min-height: 90px; display: flex; align-items: center; justify-content: flex-start; gap: 14px; font-family: Georgia, "Times New Roman", serif; font-size: 1.35rem; }
+.notice-mark { width: 54px; height: 54px; max-width: 54px; flex: 0 0 54px; object-fit: contain; }
 .notice-main { flex: 1; display: flex; }
 .notice-layout { flex: 1; display: flex; flex-direction: column; padding-top: clamp(64px, 9vh, 110px); padding-bottom: 34px; }
 .notice-content { width: min(100%, 920px); padding-left: clamp(24px, 5vw, 72px); border-left: 2px solid var(--clay); }
@@ -39,8 +39,10 @@ img { display: block; max-width: 100%; }
 .notice-copy { max-width: 780px; color: #39433f; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.15rem, 2.25vw, 1.65rem); line-height: 1.55; }
 .notice-copy p { margin-bottom: 1.15em; }
 .notice-closing { margin: clamp(42px, 7vh, 72px) 0 0; color: var(--green-dark); font-size: .83rem; font-weight: 750; letter-spacing: .16em; }
-.notice-actions { display: flex; justify-content: flex-end; margin-top: auto; padding-top: 44px; border-top: 1px solid var(--line); }
-.notice-actions .button { min-width: 180px; text-align: center; }
+
+@media (min-width: 821px) {
+  .notice-mark { width: 40px; height: 40px; max-width: 40px; flex-basis: 40px; }
+}
 
 .site-header { background: var(--paper-light); border-bottom: 1px solid var(--line); }
 .header-inner { min-height: 98px; display: flex; align-items: center; justify-content: space-between; gap: 36px; }
@@ -156,8 +158,6 @@ input:focus, textarea:focus { outline: 2px solid transparent; border-color: var(
   .brand-mark { width: 48px; height: 48px; }
   .notice-layout { padding-top: 48px; }
   .notice-content { padding-left: 20px; }
-  .notice-actions { justify-content: stretch; }
-  .notice-actions .button { width: 100%; }
   .section { padding: 72px 0; }
   .page-hero { padding: 66px 0 60px; }
   .media-blank, .media-blank.portrait { min-height: 350px; }
