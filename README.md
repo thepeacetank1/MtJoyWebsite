@@ -1,6 +1,6 @@
-# Mount Joy Medicine website
+# Mt. Joy Medicine website
 
-A lightweight, multi-page static website for Dr. Jeannine Randolph and Mount Joy Medicine.
+A lightweight, multi-page static website for Dr. Jeannine Randolph and Mt. Joy Medicine.
 
 ## Pages
 

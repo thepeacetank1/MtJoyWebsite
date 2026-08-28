@@ -2,3 +2,5 @@
 .venv/
 .local-tools/
 mailchimp-cloudflare-dns.txt
+output/
+tools/
