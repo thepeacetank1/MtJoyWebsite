@@ -39,6 +39,11 @@ img { display: block; max-width: 100%; }
 .notice-copy { max-width: 780px; color: #39433f; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.15rem, 2.25vw, 1.65rem); line-height: 1.55; }
 .notice-copy p { margin-bottom: 1.15em; }
 .notice-closing { margin: clamp(42px, 7vh, 72px) 0 0; color: var(--green-dark); font-size: .83rem; font-weight: 750; letter-spacing: .16em; }
+.notice-subscribe { max-width: 780px; margin-top: clamp(34px, 5vh, 52px); text-align: center; }
+.notice-subscribe p { margin-bottom: 16px; color: var(--green); font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.2rem, 2vw, 1.5rem); }
+.notice-subscribe-button { display: inline-block; padding: 14px 24px; color: white; background: var(--green-dark); border: 1px solid var(--green-dark); text-decoration: none; font-size: .88rem; font-weight: 700; letter-spacing: .04em; transition: background-color .2s ease, border-color .2s ease, transform .2s ease; }
+.notice-subscribe-button:hover { background: var(--green); border-color: var(--green); transform: translateY(-1px); }
+.notice-subscribe-button:focus-visible { outline: 3px solid var(--clay); outline-offset: 3px; }
 
 @media (min-width: 821px) {
   .notice-mark { width: 40px; height: 40px; max-width: 40px; flex-basis: 40px; }
